@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  database: non_profit_donator_development
+
+test:
+  adapter: postgresql
+  database: non_profit_donator_test
