@@ -1,4 +1,5 @@
 class DonationsController < ApplicationController
+  include ActionView::Helpers::NumberHelper
 
   def index
     @donations = Donation.all
@@ -6,6 +7,7 @@ class DonationsController < ApplicationController
 
   def show
     @donation = Donation.find(params[:id])
+    @cents = number_to_currency(@donation.price).gsub(/[^\d\.]/, '').to_i * 100
   end
 
 private

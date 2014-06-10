@@ -7,7 +7,8 @@
         <div class="col-sm-3">
 
           <p><%= number_to_currency donation.price, :precision => 0 %></p>
-          <p><%= donation.name %></p>
+
+          <%= link_to donation.name, donation_path(donation) %>
         </div>
       <% end %>
     </ul>
