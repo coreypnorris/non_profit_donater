@@ -8,8 +8,20 @@
 </head>
 <body>
   <div class="navbar">
-
-    </div>
+    <% if flash[:alert] %>
+      <div class="row">
+        <div class="alert alert-danger">
+          <%= flash[:alert] %>
+        </div>
+      </div>
+    <% end %>
+    <% if flash[:notice] %>
+      <div class="row">
+        <div class="alert alert-info">
+          <%= flash[:notice] %>
+        </div>
+      </div>
+    <% end %>
   </div>
 
   <div class="container">
