@@ -1,28 +1,14 @@
-== README
+##Non Profit Donater
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+####This is a Rails app that uses the Stripe web-API to send donations to non-profits.
 
-Things you may want to cover:
+#####Instruction for using this app on your own
 
-* Ruby version
+* Clone the repository in your terminal
+* Run `rake db:create` to create the databases
+* Run `rake db:migrate db:test:prepare` to migrate the databases
+* Run `rake db:seed` to seed the database with sample donation data.
+* Run `rails s` to start the server
+* Open your web browser and navigate to localhost:3000 and you should see the app working
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+I built this project while I was a student at [Epicodus](http://www.epicodus.com/). [This exercise](http://www.learnhowtoprogram.com/lessons/non-profit-donations) was meant to introduce us third party web-APIs in our Rails projects.
