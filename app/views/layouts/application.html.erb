@@ -7,25 +7,32 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="navbar">
+  <div class="navbar navbar-default">
+    <div class="navbar-header">
+      <%= link_to "Homepage", root_url, :class => "navbar-brand" %>
+    </div>
+    <div class="nav navbar-nav pull-right">
+      <p>This site is just for testing purposes. No actual donations will be made.</p>
+    </div>
+  </div>
+  <div class="container">
     <% if flash[:alert] %>
       <div class="row">
-        <div class="alert alert-danger">
+        <div class="alert alert-danger col-sm-6">
           <%= flash[:alert] %>
         </div>
       </div>
     <% end %>
     <% if flash[:notice] %>
       <div class="row">
-        <div class="alert alert-info">
+        <div class="alert alert-info col-sm-6">
           <%= flash[:notice] %>
         </div>
       </div>
     <% end %>
-  </div>
-
-  <div class="container">
-    <%= yield %>
+    <div class="row">
+      <%= yield %>
+    </div>
   </div>
 </body>
 </html>
