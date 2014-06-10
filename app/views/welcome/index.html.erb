@@ -1,5 +1,5 @@
 <div class='text-center'>
-  <div class='col-sm-5' id="welcome-row">
+  <div class='col-sm-6' id="welcome-row">
     <h1>Non Profit Donater</h1>
     <h4>Please choose an amount to donate.</h4>
     <ul class="list-unstyled">
@@ -8,7 +8,7 @@
 
           <p><%= number_to_currency donation.price, :precision => 0 %></p>
 
-          <%= link_to donation.name, donation_path(donation) %>
+          <%= link_to donation.name, donation_path(donation), :class => "btn btn-xs btn-primary" %>
         </div>
       <% end %>
     </ul>
