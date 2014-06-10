@@ -11,4 +11,4 @@
 * Run `rails s` to start the server
 * Open your web browser and navigate to localhost:3000 and you should see the app working
 
-I built this project while I was a student at [Epicodus](http://www.epicodus.com/). [This exercise](http://www.learnhowtoprogram.com/lessons/non-profit-donations) was meant to introduce us third party web-APIs in our Rails projects.
+I built this project while I was a student at [Epicodus](http://www.epicodus.com/). [This exercise](http://www.learnhowtoprogram.com/lessons/non-profit-donations) was meant to introduce us to using third party web-APIs in our Rails projects.
