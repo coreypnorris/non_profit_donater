@@ -8,6 +8,7 @@ class DonationsController < ApplicationController
   def show
     @donation = Donation.find(params[:id])
     @cents = number_to_currency(@donation.price).gsub(/[^\d\.]/, '').to_i * 100
+    @dollar_amount = number_to_currency(@donation.price)
   end
 
 private
