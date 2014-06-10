@@ -8,6 +8,7 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 
 group :development do
@@ -17,6 +18,7 @@ group :development do
 end
 
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'capybara'
