@@ -2,7 +2,7 @@
 
 ####This is a Rails app that uses the Stripe web-API to send donations to non-profits.
 
-#####Instruction for using this app on your own
+#####Instructions for using this app on your own
 
 * Clone the repository in your terminal
 * Run `rake db:create` to create the databases
