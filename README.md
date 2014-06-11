@@ -2,6 +2,8 @@
 
 ####This is a Rails app that uses the Stripe web-API to send donations to non-profits.
 
+This app isn't working as intended yet. Right now it can only charge Stripe's testing credit cards. However, you're still able to use it if you would like to. 
+
 #####Instructions for using this app on your own
 
 * Clone the repository in your terminal
